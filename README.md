@@ -11,6 +11,18 @@ Summary: JSON-RPC transport realisation
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/json-rpc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/json-rpc-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/json-rpc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/json-rpc-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/json-rpc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/json-rpc-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/json-rpc/badges/version.svg)](https://anaconda.org/conda-forge/json-rpc)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/json-rpc/badges/downloads.svg)](https://anaconda.org/conda-forge/json-rpc)
+
 Installing json-rpc
 ===================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `json-rpc` available on your platf
 ```
 conda search json-rpc --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/json-rpc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/json-rpc-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/json-rpc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/json-rpc-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/json-rpc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/json-rpc-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/json-rpc/badges/version.svg)](https://anaconda.org/conda-forge/json-rpc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/json-rpc/badges/downloads.svg)](https://anaconda.org/conda-forge/json-rpc)
 
 
 Updating json-rpc-feedstock
