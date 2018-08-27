@@ -1,7 +1,7 @@
-{%set name = "json-rpc" %}
-{%set version = "1.10.3" %}
-{%set hash_type = "md5" %}
-{%set hash_val = "24e9765de545ed2df6f06e229c88a9c8" %}
+{% set name = "json-rpc" %}
+{% set version = "1.11.1" %}
+{% set hash_type = "md5" %}
+{% set hash_val = "31dcdc53b047dcfd1d9ca5504b840e43" %}
 
 package:
   name: {{ name }}
@@ -13,11 +13,13 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
+  noarch: python
   number: 0
-  script: python setup.py install
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
 
@@ -29,6 +31,7 @@ test:
     - jsonrpc
     - jsonrpc.backend
     - jsonrpc.tests
+    - jsonrpc.dispatcher
 
   requires:
     - mock
@@ -36,9 +39,11 @@ test:
 
 about:
   home: https://github.com/pavlov99/json-rpc
-  license: MIT License
+  license: MIT
+  license_file: LICENSE.txt
   summary: 'JSON-RPC transport realisation'
 
 extra:
   recipe-maintainers:
     - dharhas
+    - ccordoba12
