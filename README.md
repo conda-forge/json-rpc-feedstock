@@ -3,7 +3,7 @@ About json-rpc
 
 Home: https://github.com/pavlov99/json-rpc
 
-Package license: MIT License
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
@@ -14,9 +14,8 @@ Summary: JSON-RPC transport realisation
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/json-rpc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/json-rpc-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/json-rpc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/json-rpc-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/json-rpc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/json-rpc-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/json-rpc-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/json-rpc-feedstock)
 
 Current release info
 ====================
