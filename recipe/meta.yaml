@@ -31,7 +31,7 @@ test:
     - jsonrpc
     - jsonrpc.backend
     - jsonrpc.tests
-    - jsonrpc.dispatchers
+    - jsonrpc.dispatcher
 
   requires:
     - mock
