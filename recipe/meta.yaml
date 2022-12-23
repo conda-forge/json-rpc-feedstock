@@ -1,7 +1,6 @@
 {% set name = "json-rpc" %}
-{% set version = "1.12.2" %}
-{% set hash_type = "md5" %}
-{% set hash_val = "0e21126f96ed12cdc75939a293bbc2e8" %}
+{% set version = "1.14.0" %}
+{% set hash_val = "9e53d7c0114cf51549118c76c3bea3e6" %}
 
 package:
   name: {{ name }}
@@ -10,7 +9,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  md5: {{ hash_val }}
 
 build:
   noarch: python
@@ -41,7 +40,7 @@ about:
   home: https://github.com/pavlov99/json-rpc
   license: MIT
   license_file: LICENSE.txt
-  summary: 'JSON-RPC transport realisation'
+  summary: JSON-RPC transport realisation
 
 extra:
   recipe-maintainers:
