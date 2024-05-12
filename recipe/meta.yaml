@@ -1,7 +1,7 @@
 {% set name = "json-rpc" %}
-{% set version = "1.12.2" %}
+{% set version = "1.13.0" %}
 {% set hash_type = "md5" %}
-{% set hash_val = "0e21126f96ed12cdc75939a293bbc2e8" %}
+{% set hash_val = "6bc55e9cb58ce9a07da9ac50df10b958" %}
 
 package:
   name: {{ name }}
