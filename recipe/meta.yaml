@@ -1,6 +1,5 @@
 {% set name = "json-rpc" %}
 {% set version = "1.12.2" %}
-{% set hash_type = "md5" %}
 {% set hash_val = "0e21126f96ed12cdc75939a293bbc2e8" %}
 
 package:
@@ -9,22 +8,22 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  md5: {{ hash_val }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -36,6 +35,7 @@ test:
   requires:
     - mock
     - nose
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pavlov99/json-rpc
